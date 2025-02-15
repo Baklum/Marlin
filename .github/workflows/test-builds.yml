@@ -31,7 +31,7 @@ jobs:
         test-platform:
         # Base Environments
 
-        - marlin_STM32G0B1RE
+        - STM32G0B1RE_btt
 #        - DUE
 #        - DUE_archim
 #        - esp32
