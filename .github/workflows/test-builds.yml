@@ -27,6 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        fail-fast: false
         test-platform:
         # Base Environments
 
@@ -128,7 +129,7 @@ jobs:
     - name: Select Python 3.7
       uses: actions/setup-python@v3
       with:
-        python-version: '3.7' # Version range or exact version of a Python version to use, using semvers version range syntax.
+        python-version: '3.7.17' # Version range or exact version of a Python version to use, using semvers version range syntax.
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 
     - name: Install PlatformIO
